@@ -25,3 +25,10 @@
   transform-origin: bottom left;
   transition: transform 0.25s ease-out;
 }
+
+.hero-container {
+  background-image: url('./assets/pattern-one.svg');
+  background-size: cover;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+}
