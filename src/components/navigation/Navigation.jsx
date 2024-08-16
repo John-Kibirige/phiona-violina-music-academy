@@ -34,7 +34,7 @@ const Navigation = () => {
           <SingleNavLink href={'/contact'} name={'Contact'} />
         </div>
 
-        <button className="ml-auto border-2 border-primary text-primary font-semibold tracking-wide md:px-1 md:font-normal md:text-sm lg:text-base lg:px-2 py-2 hover:bg-primary hover:text-white rounded-md">
+        <button className="ml-auto border-2 border-primary text-primary font-semibold tracking-wide md:px-1 md:font-normal md:text-sm lg:text-base lg:px-2 py-2 hover:bg-primary hover:text-white rounded-md active:scale-95 transition-transform duration-150 ease-in-out">
           Register Online
         </button>
       </nav>
