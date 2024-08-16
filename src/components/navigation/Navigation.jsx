@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import logo from '../../assets/logo.svg';
 import SingleNavLink from './SingleNavLink';
 import Menu from './Menu';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   const { menuOpen } = useSelector((state) => state.menu);
@@ -9,11 +10,13 @@ const Navigation = () => {
   return (
     <header className="flex items-center px-4 py-2 md:py-1 md:px-4 lg:pl-8 lg:pr-12 relative select-none gap-4">
       <div className="flex gap-2 items-center md:grow-[1]">
-        <img
-          src={logo}
-          alt="Logo"
-          className=" w-12 md:w-[6vw] max-w-16 aspect-square rounded-md"
-        />
+        <NavLink to={'/'}>
+          <img
+            src={logo}
+            alt="Logo"
+            className=" w-12 md:w-[6vw] max-w-16 aspect-square rounded-md"
+          />
+        </NavLink>
         <h3 className="flex flex-col text-secondary tracking-wide md:text-sm lg:text-base md:tracking-widest">
           <span className="block">PHIONA VIOLINA</span>{' '}
           <span className="block">MUSIC ACADEMY</span>
@@ -21,7 +24,7 @@ const Navigation = () => {
       </div>
 
       {/* nav for desktop */}
-      <nav className=" hidden md:flex border ml-auto w-4/6 items-center md:grow-[3] md:gap-3">
+      <nav className=" hidden md:flex ml-auto w-4/6 items-center md:grow-[3] md:gap-3">
         <div className="grid grid-cols-6 w-4/5 text-center text-sm lg:text-base">
           <SingleNavLink href={'/'} name={'Home'} />
           <SingleNavLink href={'/about-us'} name={'About Us'} />

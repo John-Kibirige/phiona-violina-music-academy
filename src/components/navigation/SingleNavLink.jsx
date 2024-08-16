@@ -12,7 +12,7 @@ const SingleNavLink = ({ href, name }) => {
       className={({ isActive }) =>
         isActive
           ? `${generalStyles} text-primary font-semibold under-line`
-          : `${generalStyles} text-light-primary hover:bg-light-pink`
+          : `${generalStyles} text-secondary hover:bg-light-pink`
       }
       to={href}
       onClick={() => {

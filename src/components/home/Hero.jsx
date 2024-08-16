@@ -90,12 +90,12 @@ const SlideContent = ({ imgSrc, alt, title, description, cta, isActive }) => (
       className="object-cover w-full block rounded-md"
     />
     {isActive && (
-      <div className="absolute w-[90%] h-fit rounded bg-white shadow-lg  border-lg flex flex-col gap-3 items-center text-base z-20 p-4 bottom-[-152px] left-[5%]">
-        <h3 className="text-lg font-semibold text-center text-secondary-dark">
+      <div className="absolute w-[90%] h-fit rounded bg-white shadow-lg  border-lg flex flex-col gap-3 items-center text-sm md:text-base z-20 p-4 bottom-[-152px] left-[5%]">
+        <h3 className="text-base lg:text-lg font-semibold text-center text-secondary-dark">
           {title}
         </h3>
-        <p>{description}</p>
-        <button className="px-2 py-1 text-sm rounded-sm bg-secondary text-white active:scale-95 active:transition-transform active:ease-in-out active:duration-100">
+        <p className="tracking-[0.01em]">{description}</p>
+        <button className="px-3 py-2 text-sm rounded-md bg-secondary text-white active:scale-95 active:transition-transform active:ease-in-out active:duration-100 mt-2">
           {cta}
         </button>
       </div>
@@ -109,8 +109,8 @@ const Hero = () => {
   const nextRef = useRef(null);
 
   return (
-    <section className="hero-container w-screen h-screen border-2 border-primary">
-      <h1 className="font-league-spartan text-center text-primary font-semibold text-5xl leading-10 mt-10">
+    <section className="hero-container w-screen h-screen ">
+      <h1 className="font-league-spartan text-center font-semibold text-secondary-dark leading-10 px-4 text-3xl md:text-4xl lg:text-5xl lg:leading-10 mt-10">
         Transforming Dreams Into Melodies
       </h1>
 
@@ -135,27 +135,27 @@ const Hero = () => {
         }}
         scrollbar={{ draggable: true }}
         modules={[Navigation, Pagination, EffectCoverflow]}
-        className="border-2 border-green-500 w-full pt-[50px] pb-[190px] relative"
+        className="w-full pt-[50px] pb-[190px] px-4 relative"
         onInit={() => setInit(true)}
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide
             key={index}
-            className="relative bg-center bg-cover w-[350px] h-[350px] select-none"
+            className="relative bg-center bg-cover max-w-[350px] max-h-[350px] select-none"
           >
             {({ isActive }) => <SlideContent {...slide} isActive={isActive} />}
           </SwiperSlide>
         ))}
 
-        <div className="buttons absolute bottom-[106px] left-0 right-0 border-2 border-purple-600 flex justify-between px-24">
+        <div className="buttons absolute bottom-[106px] left-0 right-0 justify-between px-4 lg:px-24 hidden sm:flex">
           <button
-            className="py-1 bg-pink-800 px-3 text-lg active:scale-95 text-white rounded tracking-wide"
+            className="py-1 bg-pink-800 px-3 lg:text-lg active:scale-95 text-white rounded tracking-wide"
             ref={prevRef}
           >
             Previous
           </button>
           <button
-            className="py-1 bg-pink-800 px-3 text-lg active:scale-95 text-white rounded tracking-wide"
+            className="py-1 bg-pink-800 px-3 lg:text-lg active:scale-95 text-white rounded tracking-wide"
             ref={nextRef}
           >
             Next
