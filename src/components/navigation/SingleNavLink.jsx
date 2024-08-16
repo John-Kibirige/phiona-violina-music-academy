@@ -1,6 +1,9 @@
+import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { closeMenu } from '../../redux/menu';
 
 const SingleNavLink = ({ href, name }) => {
+  const dispatch = useDispatch();
   const generalStyles =
     'relative py-1 rounded tracking-wide transition-colors duration-100 ease-in';
 
@@ -12,6 +15,9 @@ const SingleNavLink = ({ href, name }) => {
           : `${generalStyles} text-light-primary hover:bg-light-pink`
       }
       to={href}
+      onClick={() => {
+        dispatch(closeMenu());
+      }}
     >
       {name}
     </NavLink>
