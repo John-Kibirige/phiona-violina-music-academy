@@ -109,10 +109,18 @@ const Hero = () => {
   const nextRef = useRef(null);
 
   return (
-    <section className="hero-container w-screen h-screen ">
-      <h1 className="font-league-spartan text-center font-semibold text-secondary-dark leading-10 px-4 text-3xl md:text-4xl lg:text-5xl lg:leading-10 mt-10">
-        Transforming Dreams Into Melodies
-      </h1>
+    <section className="hero-container w-screen h-fit ">
+      <div className="px-4 flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-8 items-center">
+        <h1 className="font-league-spartan text-center font-semibold text-secondary-dark leading-10 text-3xl md:text-4xl lg:text-5xl lg:leading-10 mt-10">
+          Transforming Dreams Into Melodies
+        </h1>
+
+        <h2 className=" text-center text-primary sm:text-lg sm:w-4/5 lg:w-3/5 tracking-wide lg:leading-[32px]  md:text-xl lg:tet-2xl">
+          Learn, play, and grow with personalised lessons that turn dreams into
+          reality — whether you're finding your voice or mastering an
+          instrument.
+        </h2>
+      </div>
 
       <Swiper
         effect={'coverflow'}
