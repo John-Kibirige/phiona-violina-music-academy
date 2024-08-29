@@ -36,3 +36,16 @@
 .swiper-pagination-bullet-active {
   background-color: #be185d !important;
 }
+
+.about-home-background {
+  background-image: url('./assets/photos/about-bg.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.about-bg-2 {
+  background-image: url('./assets/photos/about-us-photo.jpg');
+  background-position: 0 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
