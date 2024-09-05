@@ -14,6 +14,8 @@ import saxophone from '../../assets/photos/saxophone.jpg';
 import womanLearningViolin from '../../assets/photos/woman-learning-violin.jpg';
 import womanPlayingPiano from '../../assets/photos/woman-playing-piano.jpg';
 import womanSinging from '../../assets/photos/woman-singing.jpg';
+import BackChevron from '../../svgs/BackChevron';
+import ForwardChevron from '../../svgs/ForwardChevron';
 
 const slidesData = [
   {
@@ -157,16 +159,18 @@ const Hero = () => {
 
         <div className="buttons absolute bottom-[106px] left-0 right-0 justify-between px-4 lg:px-24 hidden sm:flex">
           <button
-            className="py-1 bg-pink-800 px-3 lg:text-lg active:scale-95 text-white rounded tracking-wide"
+            className="bg-primary hover:bg-primary-dark active:scale-95 text-white rounded tracking-wide flex h-fit items-center gap-2 py-1 px-2"
             ref={prevRef}
           >
+            <BackChevron />
             Previous
           </button>
           <button
-            className="py-1 bg-pink-800 px-3 lg:text-lg active:scale-95 text-white rounded tracking-wide"
+            className="bg-primary hover:bg-primary-dark active:scale-95 text-white rounded tracking-wide flex justify-between h-fit items-center gap-2 py-1 px-2"
             ref={nextRef}
           >
             Next
+            <ForwardChevron />
           </button>
         </div>
       </Swiper>

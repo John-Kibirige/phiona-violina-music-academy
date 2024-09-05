@@ -45,7 +45,7 @@
 
 .about-bg-2 {
   background-image: url('./assets/photos/about-us-photo.jpg');
-  background-position: 0 100%;
-  background-size: contain;
+  background-position: 0 32%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
