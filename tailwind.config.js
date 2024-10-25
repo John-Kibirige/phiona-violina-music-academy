@@ -18,6 +18,7 @@ export default {
         secondary: '#080a14',
         // secondary: '#7a017a',
         'secondary-dark': '#5a065a',
+        muted: '#7f8296',
       },
       keyframes: {
         'menu-span-1': {
