@@ -1,8 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face{
+  font-family: 'P22';
+  src: url('font/font.ttf') format('truetype')
+}
+
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* <!--just trying out various color schemes--> */
+:root {
+  --bg-primary: #03050e;
+  --bg-secondary: #080a14;
+  --bg-accent: #101530;
+  --foreground: #f7f7f8;
+  --muted-foreground: #7f8296;
+  --border-primary: #262626;
+  --border-secondary: #101530;
+  --primary: #e43a15;
+  --primary-accent: #AD13FB;
+  --primary-variant: #6d19fd;
+  --color-white: #ffffff;
+  --gradient-1: linear-gradient(260deg, var(--primary-accent) 0%, var(--primary) 100%);
+  --gradient-2: linear-gradient(to top left, #0052D4, #ffb804, #6fb1fc);
+  --warning: #ffa500;
+  --transition: all 400ms ease;
+  --glow: radial-gradient(rgba(0, 36, 214, 0.3) 0%, rgba(3, 5, 14, 0.5));
+  --shadow-1: 0px 3px 4px 0px var(--primary-variant);
+  --shadow-2: 0px 0px 20px 0px #760cab;
+  --shadow-3: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05), 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02), 0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+}
+/* This 🙄 can be deleted */
 
 .under-line {
   position: relative;

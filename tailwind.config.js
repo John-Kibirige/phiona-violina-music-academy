@@ -4,15 +4,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        sans: ['Poppins', 'sans-serif'], // Sets Poppins as the main sans-serif font
+        p22: ['P22', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         spartan: ['League Spartan', 'sans-serif'],
       },
       colors: {
-        primary: '#BE185D',
+        primary: '#e43a15',
+        primary1: '#BE185D',
         'light-pink': '#fce7f3',
         'light-primary': '#DA4861',
         'primary-dark': '#6F0632',
-        secondary: '#7a017a',
+        secondary: '#080a14',
+        // secondary: '#7a017a',
         'secondary-dark': '#5a065a',
       },
       keyframes: {
@@ -64,6 +68,15 @@ export default {
         'menu-span-3-reverse': 'menu-span-3-reverse 0.1s ease-in forwards',
         menu: 'menu 0.1s ease-in forwards',
         'menu-reverse': 'menu-reverse 0.1s ease-in forwards',
+      },
+      margin: {
+        '0': '0',
+      },
+      padding: {
+        '0': '0',
+      },
+      boxSizing: {
+        'border-box': 'border-box',
       },
     },
   },
