@@ -1,13 +1,18 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, EffectCoverflow, Thumbs } from 'swiper/modules';
+import { Mousewheel, EffectCoverflow, Thumbs, Navigation, FreeMode } from 'swiper/modules';
+
+// Import Swiper styles
 import 'swiper/css';
-//import 'swiper/css/effect-coverflow';
-//import 'swiper/css/thumbs';
-//import { Mousewheel, EffectCoverflow, Thumbs } from 'swiper'
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+
+
 
 const Programs = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [mainSwiper, setMainSwiper] = useState(null);
   return (
     <section className="h-screen font-sans text-white">
       <Swiper
