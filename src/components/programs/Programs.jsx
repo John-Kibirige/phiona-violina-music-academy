@@ -1,18 +1,23 @@
-import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, EffectCoverflow, Thumbs, Navigation, FreeMode } from 'swiper/modules';
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Mousewheel,
+  EffectCoverflow,
+  Thumbs,
+  Navigation,
+  FreeMode,
+} from "swiper/modules";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-
-
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
 const Programs = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [mainSwiper, setMainSwiper] = useState(null);
+
   return (
     <section className="h-screen font-sans text-white">
       <Swiper
@@ -24,7 +29,7 @@ const Programs = () => {
         spaceBetween={0}
         slidesPerView={1}
         effect="coverflow"
-        modules={[Mousewheel, EffectCoverflow, Thumbs]}
+        modules={[Mousewheel, EffectCoverflow, Thumbs, FreeMode, Navigation]}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -32,7 +37,8 @@ const Programs = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        thumbs={{ swiper: thumbsSwiper }}
+        thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : null}
+        onSwiper={setMainSwiper}
       >
         <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center text-white text-[18px] bg-gradient-to-b from-orange-500 to-gray-900 ">
           <h2 className="absolute top-10 right-80 transform rotate-90 translate-x-[45%] translate-y-full font-p22 text-[40px]">
@@ -93,6 +99,7 @@ const Programs = () => {
           </div>
           <img src="image/2.png" alt="2" className="object-cover h-full"></img>
         </SwiperSlide>
+
         <SwiperSlide className="text-center text-lg bg-white flex justify-center items-center text-white text-[18px] bg-gradient-to-b from-pink-300 to-gray-900 ">
           <h2 className="absolute top-10 right-80 transform rotate-90 translate-x-[45%] translate-y-full font-p22 text-[40px]">
             Phiona Violin Music Academy
@@ -125,32 +132,39 @@ const Programs = () => {
       </Swiper>
 
       <div className="fixed top-80 right-30 py-4 px-20 justify-center items-center z-10 w-72 overflow-hidden">
-        <Swiper className="justify-center items-center">
-          <SwiperSlide className="h-12 cursor-pointer  bg-orange-500">
-            <img
-              src="image/1.png"
-              alt="Thumbnail-1"
-              className="object-cover h-full flex items-center justify-center"
-            ></img>
-          </SwiperSlide>
-          <SwiperSlide className="h-12 cursor-pointer justify-center items-center bg-blue-900">
-            <img
-              src="image/2.png"
-              alt="Thumbnail-2"
-              className="object-cover h-full flex items-center justify-center"
-            ></img>
-          </SwiperSlide>
-          <SwiperSlide className="h-12 cursor-pointer justify-center items-center bg-pink-300">
-            <img
-              src="image/3.png"
-              alt="Thumbnail-3"
-              className="object-cover h-full flex items-center justify-center"
-            ></img>
-          </SwiperSlide>
+        <Swiper
+          onSwiper={setThumbsSwiper}
+          loop={true}
+          spaceBetween={0}
+          slidesPerView={2}
+          freeMode={true}
+          watchSlidesProgress={true}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className="justify-center items-center"
+        >
+          {["1", "2", "3"].map((img, index) => (
+            <SwiperSlide
+              key={index}
+              className={`h-12 cursor-pointer items-center justify-center ${
+                index === 0
+                  ? "bg-orange-500"
+                  : index === 1
+                  ? "bg-blue-900"
+                  : "bg-pink-300"
+              }`}
+            >
+              <img
+                src={`image/${img}.png`}
+                alt={`Thumbnail-${img}`}
+                className="object-cover h-full flex items-center justify-center"
+                onClick={() => mainSwiper?.slideTo(index)} // Set slide on thumbnail click
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
   );
-}
+};
 
-export default Programs
+export default Programs;
