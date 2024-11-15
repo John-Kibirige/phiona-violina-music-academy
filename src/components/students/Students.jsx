@@ -24,41 +24,42 @@ const Students = () => {
         }}
         loop={true}
         spaceBetween={10}
+        slidesPerView={3}
         navigation={true}
         thumbs={thumbsSwiper ? { swiper: thumbsSwiper } : null}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2 w-full h-4/5 mx-auto" // width and height of the main Swiper container
+        className="mySwiper2 w-full h-1/2 mx-auto  bg-primary" // width and height of the main Swiper container
         onSwiper={setMainSwiper} // Set the main swiper instance
       >
-        <SwiperSlide className="text-center flex justify-center items-center bg-white"> {/* Align slide text */}
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" className="block w-full h-full object-cover" />
+        <SwiperSlide className="text-center flex justify-center items-center"> {/* Align slide text */}
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731678586/student-1.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731678586/student-2.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731678586/student-3.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731678586/student-4.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731678586/student-5.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731678586/student-6.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731678586/student-7.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731678587/student-8.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731679535/student-9.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" className="block w-full h-full object-cover" />
+          <img src="https://res.cloudinary.com/dedzljzlc/image/upload/v1731679625/student-10.jpg" className="block w-full h-full object-cover" />
         </SwiperSlide>
       </Swiper>
 
@@ -66,7 +67,7 @@ const Students = () => {
         onSwiper={setThumbsSwiper}
         loop={true}
         spaceBetween={10}
-        slidesPerView={4}
+        slidesPerView={6}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
@@ -75,13 +76,13 @@ const Students = () => {
         {Array.from({ length: 10 }, (_, index) => (
           <SwiperSlide
             key={index}
-            className="w-1/4 h-full opacity-40" // Thumbnail width, height, and opacity
+            className="w-1/4 h-full opacity-1/2" // Thumbnail width, height, and opacity
           >
             <img
-              src={`https://swiperjs.com/demos/images/nature-${index + 1}.jpg`}
+              src={`https://res.cloudinary.com/dedzljzlc/image/upload/v1731678587/student-${index + 1}.jpg`}
               onClick={() => mainSwiper.slideTo(index)} // Navigate to the corresponding slide on click
               className="block w-full h-full object-cover cursor-pointer" // Thumbnail image style
-              alt={`Nature ${index + 1}`}
+              alt={`Student ${index + 1}`}
             />
           </SwiperSlide>
         ))}

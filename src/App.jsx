@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+//import routesConstants from "../constants/routeConstants";
 import Navigation from './components/navigation/Navigation';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -6,6 +7,8 @@ import Programs from './components/programs/Programs';
 import Students from './components/students/Students';
 import Gallery from './components/gallery/Gallery';
 import Contact from './components/contact/Contact';
+import routesConstants from './constants/routeConstants';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -19,6 +22,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }

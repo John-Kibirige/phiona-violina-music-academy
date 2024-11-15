@@ -1,11 +1,16 @@
 import { useSelector } from 'react-redux';
+import { NavLink, useNavigate } from 'react-router-dom'; // Import useNavigate
 import logo from '../../assets/logo.svg';
 import SingleNavLink from './SingleNavLink';
 import Menu from './Menu';
-import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   const { menuOpen } = useSelector((state) => state.menu);
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleRegisterClick = () => {
+    navigate('/contact'); // Navigate to the contact page
+  };
 
   return (
     <header className="flex items-center px-4 py-2 md:py-1 md:px-4 lg:pl-8 lg:pr-12 relative select-none gap-4">
@@ -24,7 +29,7 @@ const Navigation = () => {
       </div>
 
       {/* nav for desktop */}
-      <nav className=" hidden md:flex ml-auto w-4/6 items-center md:grow-[3] md:gap-3">
+      <nav className="hidden md:flex ml-auto w-4/6 items-center md:grow-[3] md:gap-3">
         <div className="grid grid-cols-6 w-4/5 text-center text-sm lg:text-base">
           <SingleNavLink href={'/'} name={'Home'} />
           <SingleNavLink href={'/about-us'} name={'About Us'} />
@@ -34,7 +39,10 @@ const Navigation = () => {
           <SingleNavLink href={'/contact'} name={'Contact'} />
         </div>
 
-        <button className="ml-auto border-2 border-primary text-primary font-semibold tracking-wide md:px-1 md:font-normal md:text-sm lg:text-base lg:px-2 py-2 hover:bg-primary hover:text-white rounded-md active:scale-95 transition-transform duration-150 ease-in-out">
+        <button
+          onClick={handleRegisterClick} // Add the click handler
+          className="ml-auto border-2 border-primary text-primary font-semibold tracking-wide md:px-1 md:font-normal md:text-sm lg:text-base lg:px-2 py-2 hover:bg-primary hover:text-white rounded-md active:scale-95 transition-transform duration-150 ease-in-out"
+        >
           Register Online
         </button>
       </nav>
@@ -59,7 +67,10 @@ const Navigation = () => {
               <SingleNavLink href={'/contact'} name={'Contact'} />
             </div>
 
-            <button className="ml-auto border-2 border-primary text-primary font-semibold tracking-wide px-2 py-2 hover:bg-primary hover:text-white rounded-md">
+            <button
+              onClick={handleRegisterClick} // Add the click handler
+              className="ml-auto border-2 border-primary text-primary font-semibold tracking-wide px-2 py-2 hover:bg-primary hover:text-white rounded-md"
+            >
               Register Online
             </button>
           </div>
