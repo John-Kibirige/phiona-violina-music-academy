@@ -156,3 +156,36 @@ export const FRAMEWORK_DATA = [
       "For personalized instruction, our private lessons offer one-on-one attention tailored to your individual needs and goals. Perfect for those seeking focused learning and rapid progress.",
   },
 ];
+
+export const faqData = [
+  {
+    question: "How does the billing work?",
+    answer:
+      "We offer a variety of billing options, including monthly and annual subscription plans, as well as pay-as-you-go pricing for certain services. Payment is typically made through a credit card or other secure online payment method.",
+  },
+  {
+    question: "Can I get a refund for my subscription?",
+    answer:
+      "We provide a 30-day money-back guarantee for most subscription plans. If you are not satisfied within the first 30 days, you can request a full refund. Refunds for subscriptions active longer than 30 days may be considered on a case-by-case basis.",
+  },
+  {
+    question: "How do I cancel my subscription?",
+    answer:
+      "To cancel your subscription, log in to your account and navigate to the subscription management page. From there, you can cancel your subscription and stop future billing.",
+  },
+  {
+    question: "Is there a free trial?",
+    answer:
+      "We offer a free trial of our software for a limited time. During this period, you will have access to a limited set of features without being charged.",
+  },
+  {
+    question: "How do I contact support?",
+    answer:
+      "If you need assistance with our platform or have any questions, you can contact our support team by submitting a request through the website or by emailing support@ourwebsite.com.",
+  },
+  {
+    question: "Do you offer any discounts or promotions?",
+    answer:
+      "We may offer discounts or promotions from time to time. To stay updated on the latest deals and special offers, sign up for our newsletter or follow us on social media.",
+  },
+];
