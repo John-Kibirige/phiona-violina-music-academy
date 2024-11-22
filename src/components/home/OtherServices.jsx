@@ -9,6 +9,7 @@ const OtherServices = () => {
       <h3 className="text-xl md:text-2xl text-primary font-semibold leading-10 mt-2">
         Music Production & Performance Services
       </h3>
+      
     </div>
   );
 };

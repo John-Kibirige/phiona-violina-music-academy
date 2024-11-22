@@ -13,8 +13,8 @@ const Programs = () => {
                 Discover the world's best music programs
               </h1>
               <p className="text-white text-xl mb-8">
-                From hand-picked farms to your cup, we source the finest beans
-                and roast them to perfection.
+                From hand-picked programs to your mind, we source the finest instrunments
+                and train them to perfection.
               </p>
               <a
                 href="#"
@@ -26,7 +26,7 @@ const Programs = () => {
             {/* Image */}
             <div className="md:w-1/2">
               <img
-                src="https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7"
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732286450/william-recinos-qtYhAQnIwSE-unsplash_vd9bmn.jpg"
                 alt="Coffee beans"
                 className="w-full rounded-lg shadow-lg"
               />
@@ -45,22 +45,22 @@ const Programs = () => {
             {/* Product Card 1 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-110 w-full">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732286530/Jazz_g7pwt6.jpg"
                 alt="Coffee"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  Single Origin Blend
+                  Program Name
                 </h3>
                 <p className="text-gray-700 text-base">
-                  Our most popular blend, featuring beans from a single farm in
-                  Ethiopia. Notes of chocolate, berries, and citrus.
+                Our most popular program, featuring perfection and composure from a experts in
+                the field.
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-gray-700 font-medium">$14.99</span>
+                  <span className="text-gray-700 font-medium">Why wait?</span>
                   <button className="px-4 py-2 bg-primary text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
-                    Add to cart
+                    Sign Up
                   </button>
                 </div>
               </div>
@@ -69,22 +69,22 @@ const Programs = () => {
             {/* Product Card 1 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-110 w-full">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732286530/download_3_l1s4iv.jpg"
                 alt="Coffee"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  Single Origin Blend
+                  Program Name
                 </h3>
                 <p className="text-gray-700 text-base">
-                  Our most popular blend, featuring beans from a single farm in
-                  Ethiopia. Notes of chocolate, berries, and citrus.
+                Our most popular program, featuring perfection and composure from a experts in
+                the field.
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-gray-700 font-medium">$14.99</span>
+                  <span className="text-gray-700 font-medium">Why wait?</span>
                   <button className="px-4 py-2 bg-primary text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
-                    Add to cart
+                    Sign Up
                   </button>
                 </div>
               </div>
@@ -93,22 +93,22 @@ const Programs = () => {
             {/* Product Card 1 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-110 w-full">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732286529/Featured_Artists_hjezhy.jpg"
                 alt="Coffee"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  Single Origin Blend
+                  Program Name
                 </h3>
                 <p className="text-gray-700 text-base">
-                  Our most popular blend, featuring beans from a single farm in
-                  Ethiopia. Notes of chocolate, berries, and citrus.
+                Our most popular program, featuring perfection and composure from a experts in
+                the field.
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-gray-700 font-medium">$14.99</span>
+                  <span className="text-gray-700 font-medium">Why wait?</span>
                   <button className="px-4 py-2 bg-primary text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
-                    Add to cart
+                    Sign Up
                   </button>
                 </div>
               </div>
@@ -117,22 +117,22 @@ const Programs = () => {
             {/* Product Card 1 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-110 w-full">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732286528/Welcome_to_the_Catalina_JazzTrax_Festival_Website_jvhorf.jpg"
                 alt="Coffee"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  Single Origin Blend
+                  Program Name
                 </h3>
                 <p className="text-gray-700 text-base">
-                  Our most popular blend, featuring beans from a single farm in
-                  Ethiopia. Notes of chocolate, berries, and citrus.
+                Our most popular program, featuring perfection and composure from a experts in
+                the field.
                 </p>
                 <div className="mt-4 flex items-center justify-between transition transform hover:scale-110 w-full">
-                  <span className="text-gray-700 font-medium">$14.99</span>
+                  <span className="text-gray-700 font-medium">Why wait?</span>
                   <button className="px-4 py-2 bg-primary text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
-                    Add to cart
+                    Sign Up
                   </button>
                 </div>
               </div>
@@ -141,22 +141,22 @@ const Programs = () => {
             {/* Product Card 1 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-110 w-full">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732286531/download_2_pgdxqm.jpg"
                 alt="Coffee"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  Single Origin Blend
+                  Program Name
                 </h3>
                 <p className="text-gray-700 text-base">
-                  Our most popular blend, featuring beans from a single farm in
-                  Ethiopia. Notes of chocolate, berries, and citrus.
+                Our most popular program, featuring perfection and composure from a experts in
+                the field.
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-gray-700 font-medium">$14.99</span>
+                  <span className="text-gray-700 font-medium">Why wait?</span>
                   <button className="px-4 py-2 bg-primary text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
-                    Add to cart
+                    Sign Up
                   </button>
                 </div>
               </div>
@@ -165,22 +165,22 @@ const Programs = () => {
            {/* Product Card 1 */}
            <div className="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-110 w-full">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732274808/4_4_Size_Neon_Pink_Violin_xpjouu.jpg"
                 alt="Coffee"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  Single Origin Blend
+                  Program Name
                 </h3>
                 <p className="text-gray-700 text-base">
-                  Our most popular blend, featuring beans from a single farm in
-                  Ethiopia. Notes of chocolate, berries, and citrus.
+                Our most popular program, featuring perfection and composure from a experts in
+                the field.
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-gray-700 font-medium">$14.99</span>
+                  <span className="text-gray-700 font-medium">Why wait?</span>
                   <button className="px-4 py-2 bg-primary text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
-                    Add to cart
+                    Sign Up
                   </button>
                 </div>
               </div>
@@ -189,22 +189,22 @@ const Programs = () => {
             {/* Product Card 1 */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-110 w-full">
               <img
-                src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732286450/william-recinos-qtYhAQnIwSE-unsplash_vd9bmn.jpg"
                 alt="Coffee"
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  Single Origin Blend
+                  Program Name
                 </h3>
                 <p className="text-gray-700 text-base">
-                  Our most popular blend, featuring beans from a single farm in
-                  Ethiopia. Notes of chocolate, berries, and citrus.
+                  Our most popular program, featuring perfection and composure from a experts in
+                  the field. 
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-gray-700 font-medium">$14.99</span>
+                  <span className="text-gray-700 font-medium">Why wait?</span>
                   <button className="px-4 py-2 bg-primary text-white font-bold rounded-full hover:bg-blue-700 transition duration-200">
-                    Add to cart
+                    Sign Up
                   </button>
                 </div>
               </div>

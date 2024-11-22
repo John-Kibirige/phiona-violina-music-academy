@@ -17,6 +17,35 @@ const Students = () => {
 
   return (
     <>
+     <section className="bg-primary py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* Text Content */}
+            <div className="md:w-1/2 mb-8 md:mb-0">
+              <h1 className="text-white font-bold text-5xl leading-tight mb-6">
+                Meet some of our students
+              </h1>
+              <p className="text-white text-xl mb-8">
+              we take immense pride in our talented students who embody passion, creativity, and dedication to their musical journeys. 
+              </p>
+              <a
+                href="#"
+                className="px-6 py-3 bg-white text-primary font-bold rounded-full hover:bg-blue-700 hover:text-white transition duration-200"
+              >
+                Join them
+              </a>
+            </div>
+            {/* Image */}
+            <div className="md:w-1/2">
+              <img
+                src="https://res.cloudinary.com/dedzljzlc/image/upload/v1732286450/william-recinos-qtYhAQnIwSE-unsplash_vd9bmn.jpg"
+                alt="Coffee beans"
+                className="w-full rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
